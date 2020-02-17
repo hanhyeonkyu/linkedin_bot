@@ -30,6 +30,7 @@ class LinkedBot():
 
     def auto_add(self):
         self.go_people_view()
+        sleep(1)
         i = 1
         while True:
             try:
@@ -39,7 +40,9 @@ class LinkedBot():
                 i += 1
                 print(i)
                 pass
-
+    
+    def auto_send(self):
+        pass
 
 bot = LinkedBot()
 bot.login()
